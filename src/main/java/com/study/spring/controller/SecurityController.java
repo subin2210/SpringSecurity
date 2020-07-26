@@ -10,5 +10,20 @@ public class SecurityController {
 	public String getHome() {
 		return "home";
 	}
+	
+	@GetMapping("/leaders/internationalConference")
+	public String showInternationConference() {
+		return "internationalConference";
+	}
+	
+	@GetMapping("/system/adminHomePage")
+	public String showSystemAdmin() {
+		return "systemAdmin";
+	}
+	
+	@GetMapping("/accessDenied")
+	public String accessDenied() {
+		return "notAuthorized";
+	}
 
 }
